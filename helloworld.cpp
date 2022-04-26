@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    cout<<"Hello there! Here's a collection of Data Structures and Algorithm in C++."
-    return 0;
+int main(int argc, char const *argv[])
+{
+	cout<<"Hello world! This is a repository for Data Strucures and Algorithm with C++."<<endl;
+	return 0;
 }
