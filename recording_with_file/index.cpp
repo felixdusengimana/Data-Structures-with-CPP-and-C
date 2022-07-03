@@ -62,7 +62,7 @@ int update_file(string id, string type, string fname, string lname, float balanc
              string data = id+" "+first_name+" "+last_name+" "+to_string(newBalance);
              file2<<data<< endl;
              cout<<"\n\t\tAcount number: "<<single_user_data[0]<<endl;
-             cout<<"\t\tYour new Balance is: "<<newBalance<<endl;
+             cout<<"\t\tYour new Balance is: "<<to_string(newBalance)<<endl;
              found = true;
             }else{
               found = true;
@@ -146,7 +146,7 @@ int create_account(){
     string fname, lname;
     float initbalance=0.0f;
     cout<<"\n\t\tEnter First Name: ";
-    cin>>fname;
+    std::getline(std::cin, fname);
     cout<<"\t\tEnter Last  Name: ";
     cin>>lname;
     new_balance:
